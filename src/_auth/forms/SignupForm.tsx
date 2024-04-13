@@ -12,9 +12,6 @@ import { Link, useNavigate } from "react-router-dom"
 import { useToast } from "@/components/ui/use-toast"
 import { useCreateUserAccount, useSignInAccount } from "@/lib/react-query/queriesAndMutations"
 import { useUserContext } from "@/context/AuthContext"
-// import { signInAccount } from "@/lib/appwrite/api"
- 
-
 
 const SignupForm = () => {
   const { toast } = useToast();
