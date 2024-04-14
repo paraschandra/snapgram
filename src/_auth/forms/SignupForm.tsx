@@ -128,7 +128,7 @@ const SignupForm = () => {
           />
 
           <Button type="submit" className="shad-button_primary">
-            {isCreatingAccount ? (
+            {isCreatingAccount || isSigningIn || isUserLoading ? (
               <div className="flex-center gap-2">
                 <Loader/>  Loading...
               </div>
@@ -137,7 +137,9 @@ const SignupForm = () => {
 
           <p className="text-small-regular text-light-2 text-center mt-2">
             Already have an account?
-            <Link to='/sign-in' className="text-primary-500 text-small-semibold ml-1">Log in</Link>
+            <Link to='/sign-in' className="text-primary-500 text-small-semibold ml-1">
+              Log in
+            </Link>
           </p>
         </form>
       </div>
